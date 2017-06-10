@@ -49,7 +49,6 @@ h3,
 h4,
 h5,
 h6 {
-  width: 800px;
   font-weight: 800;
 }
 a {
@@ -203,6 +202,7 @@ hr.small {
   }
 }
 .intro-header .post-heading h1 {
+  width: 800px;
   font-size: 35px;
 }
 .intro-header .post-heading .subheading,

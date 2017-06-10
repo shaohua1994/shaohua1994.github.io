@@ -10,11 +10,9 @@
 
     <!--Description-->
     
-        <meta name="description" content="date: 2017-06-10 15:52:06
- ssh 简介
-SSH 为 Secure Shell 的缩写,SSH 为建立在应用层和传输层基础上的安全协议。
+        <meta name="description" content="date: 2017-06-07 10:33:21
 
-SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。SS">
+使用gulp创建前端自动化工作流环境分类:  插件&amp;amp;工具 node.js 学习笔记 什么是gulp ?&amp;emsp;&amp;emsp;gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程">
     
 
     <!--Author-->
@@ -24,7 +22,7 @@ SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安�
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="ssh 链接 github"/>
+        <meta property="og:title" content="gulp搭建前端自动化工作流环境"/>
     
 
     <!--Open Graph Description-->
@@ -46,7 +44,7 @@ SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安�
 
     <!-- Title -->
     
-    <title>ssh 链接 github - 少华的技术博客</title>
+    <title>gulp搭建前端自动化工作流环境 - 少华的技术博客</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -156,13 +154,13 @@ SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安�
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>ssh 链接 github</h1>
+                    <h1>gulp搭建前端自动化工作流环境</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                         
-                            2017-06-10
+                            2017-06-07
                         
                     </span>
                 </div>
@@ -184,54 +182,79 @@ SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安�
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>date: 2017-06-10 15:52:06</p>
-<h2 id="ssh-简介"><a href="#ssh-简介" class="headerlink" title=" ssh 简介"></a> ssh 简介</h2><ol>
-<li><p>SSH 为 Secure Shell 的缩写,SSH 为建立在应用层和传输层基础上的安全协议。</p>
-</li>
-<li><p>SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议。利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。SSH最初是UNIX系统上的一个程序，后来又迅速扩展到其他操作平台。</p>
-</li>
-<li><p>通过使用SSH,还有一个 额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。 SSH有很多功能，它既可以代替telnet，又可以为ftp、pop、甚至ppp提 供一个安全的“通道”。</p>
-</li>
-</ol>
-<p>在我们写博客上传到github的时候每次都要输用户名和密码,如果使用SSH的话,就可以记住用户名和密码,并创建属于自己的密码用来保证安全操作.</p>
+                <p>date: 2017-06-07 10:33:21</p>
 <hr>
-<h3 id="一、Windows环境下生成SSH-key且连接GitHub"><a href="#一、Windows环境下生成SSH-key且连接GitHub" class="headerlink" title="一、Windows环境下生成SSH key且连接GitHub"></a>一、Windows环境下生成SSH key且连接GitHub</h3><ol>
-<li>首先看看本机是否存在SSH keys秘钥</li>
-</ol>
-<p><code>在计算机中找到git文件夹,打开git Bash文件,双击运行:</code></p>
-<p><img src="/img/gitbash.png" alt="gitbash"></p>
-<pre><code>$cd ~/.ssh#   
-</code></pre><p> 检查你本机用户home目录下是否存在<code>.ssh</code>目录<br>  如果，不存在此目录，则进行第二步操作，否则，你本机已经存在ssh公钥和私钥，可以略过第二步，直接进入第三步操作。</p>
-<h3 id="二、创建一对新的SSH密钥-keys"><a href="#二、创建一对新的SSH密钥-keys" class="headerlink" title="二、创建一对新的SSH密钥(keys)"></a>二、创建一对新的SSH密钥(keys)</h3><p>输入下面命令:</p>
-<pre><code>  $ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
-  #这将按照你提供的邮箱地址(最好是你自己的邮箱地址)，创建一对密钥
-  Generating public/private rsa key pair.
-  Enter file in which to save the key (/c/Users/you/.ssh/id_rsa): [Press enter]  //直接回车
+<h2 id="使用gulp创建前端自动化工作流环境"><a href="#使用gulp创建前端自动化工作流环境" class="headerlink" title="使用gulp创建前端自动化工作流环境"></a>使用gulp创建前端自动化工作流环境</h2><h5 id="分类-插件-amp-工具-node-js-学习笔记"><a href="#分类-插件-amp-工具-node-js-学习笔记" class="headerlink" title="分类:  插件&amp;工具 node.js 学习笔记 "></a>分类: <em> 插件&amp;工具 node.js 学习笔记 </em></h5><h3 id="什么是gulp"><a href="#什么是gulp" class="headerlink" title="什么是gulp ?"></a>什么是gulp ?</h3><p>&emsp;&emsp;gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率。<br>&emsp;&emsp;gulp是基于Nodejs的自动任务运行器， 她能自动化地完成 javascript/coffee/sass/less/html/image/css 等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，她借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。</p>
+<p>&emsp;&emsp;在学习前，先谈谈大致使用gulp的步骤，给读者以初步的认识。首先当然是安装nodejs，通过nodejs的npm全局安装和项目安装gulp，其次在项目里安装所需要的gulp插件，然后新建gulp的配置文件gulpfile.js并写好配置信息（定义gulp任务），最后通过命令提示符运行gulp任务即可。</p>
+<h4 id="安装nodejs-gt-全局安装gulp-gt-项目安装gulp以及gulp插件-gt-配置gulpfile-js-gt-运行任务"><a href="#安装nodejs-gt-全局安装gulp-gt-项目安装gulp以及gulp插件-gt-配置gulpfile-js-gt-运行任务" class="headerlink" title="安装nodejs -&gt; 全局安装gulp -&gt; 项目安装gulp以及gulp插件 -&gt; 配置gulpfile.js -&gt; 运行任务"></a>安装nodejs -&gt; 全局安装gulp -&gt; 项目安装gulp以及gulp插件 -&gt; 配置gulpfile.js -&gt; 运行任务</h4><p>安装node可以去<a href="https://github.com/" target="_blank" rel="external">github</a>官网下载然后直接安装就可以,打开命令行输入node -v 检查是否安装成功。因为新版的nodejs内置有npm所以不需要再安装npm.npm 是nodejs 的包管理工具,通过它可以下载安装nodejs的模块包。完成之后我们可以来下载gulp工具了。</p>
+<h4 id="首先我们来搭建gulp工程"><a href="#首先我们来搭建gulp工程" class="headerlink" title="首先我们来搭建gulp工程:"></a>首先我们来搭建gulp工程:</h4><hr>
+<pre><code>gulp/
+  ├── src/
+  │   ├── less/
+  │   │   └─ main.scss
+  │   ├── scripts/
+  │   │   └─ javascript.js
+  │   └── index.html
+  ├── dist/
+  └── gulpfile.js /
+</code></pre><h4 id="1-先全局安装gulp"><a href="#1-先全局安装gulp" class="headerlink" title="1.先全局安装gulp"></a>1.先全局安装gulp</h4><ul>
+<li><p>说明：全局安装gulp目的是为了通过她执行gulp任务；</p>
+<pre><code>npm install gulp -g
+</code></pre></li>
+<li><p>查看是否正确安装：命令提示符执行gulp -v，出现版本号即为正确安装。</p>
+<pre><code>gulp -v
+</code></pre></li>
+<li><p>然后回到文件根目录(gulp)命令行输入</p>
+<pre><code>npm init        //创建一个package.json文件
+</code></pre></li>
+</ul>
+<hr>
+<h4 id="2-进行本地安装gulp-命令行行输入"><a href="#2-进行本地安装gulp-命令行行输入" class="headerlink" title="2.进行本地安装gulp 命令行行输入"></a>2.进行本地安装gulp 命令行行输入</h4><pre><code>npm install gulp --save-dev
+</code></pre><hr>
+<blockquote>
+<p>gulp常用组件</p>
+</blockquote>
+<pre><code>gulp-htmlmin --save
 
-  Enter passphrase (empty for no passphrase): [Type a passphrase]  //直接回车
-Enter same passphrase again: [Type passphrase again]   //直接回车
-</code></pre><p>完成之后会看见如下提示</p>
-<pre><code>Your identification has been saved in /c/Users/you/.ssh/id_rsa.
-Your public key has been saved in /c/Users/you/.ssh/id_rsa.pub.
-The key fingerprint is:
-01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com  //生成新的秘钥
-</code></pre><p>此时你会看到本机用户home目录下有<code>.SSH</code>文件,并且已经生成三个文件</p>
-<p><img src="/img/sshfile.png" alt=""></p>
-<h3 id="三、在GitHub账户中添加你的公钥"><a href="#三、在GitHub账户中添加你的公钥" class="headerlink" title="三、在GitHub账户中添加你的公钥"></a>三、在GitHub账户中添加你的公钥</h3><p><code>打开.ssh文件里的id_rsa.pub,复制全选粘贴到github添加key的地方!</code></p>
-<p><a href="/img/miyao.png"></a></p>
-<p><img src="/img/gitssh.png" alt=""></p>
-<p>点击<code>Add SSH key</code>按钮后,会弹出窗口输入github密码,输入<br>完成</p>
-<h3 id="四、测试一下"><a href="#四、测试一下" class="headerlink" title="四、测试一下"></a>四、测试一下</h3><p>确认我们可以通过SSH连接GitHub，我们输入下面命令:</p>
-<pre><code>$ssh -T git@github.com
-</code></pre><p>输入后，会要求我们提供验证密码，<code>输入之前创建的密码就ok了。</code></p>
-<p>然后你会看到告警信息：</p>
-<pre><code>The authenticity of host &apos;github.com (207.97.227.239)&apos; can&apos;t be established.
-RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-Are you sure you want to continue connecting (yes/no)?
-</code></pre><p>不用担心，直接输入<code>yes。</code></p>
-<p>如果有提示如下信息说明可以通过ssh链接到github了,大功告成!</p>
-<pre><code>Hi username! You’ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
+gulp-less --save   
+
+gulp-cssnano       
+
+gulp-uglify   
+</code></pre><blockquote>
+<p>gulp常用API</p>
+</blockquote>
+<pre><code>gulp.task(&apos;任务名称&apos;,[&apos;其他任务&apos;],回调函数)
+
+gulp.src(&apos;文件路径&apos;)
+
+gulp.dest(&apos;目标路径&apos;)   
+
+gul.watch   //监听   
+
+.pipe   //起到一个管道作用
+</code></pre><hr>
+<h4 id="3-然后可以进行安装gulp插件"><a href="#3-然后可以进行安装gulp插件" class="headerlink" title="3.然后可以进行安装gulp插件"></a>3.然后可以进行安装gulp插件</h4><pre><code>npm install gulp-htmlmin --save     //gulp-htmlmin插件对html文件进行压缩
+
+npm install gulp-less --save    //对less文件的编译成为css文件
+
+npm install gulp-cssnano        //压缩css文件
+
+npm install gulp-uglify         //对js文件压缩
+
+npm install browser-sync           //让浏览器实时、快速相应文件的更改，并自动刷新页面
+</code></pre><hr>
+<p>接下来可以在gulpgile.js文件里进行编写</p>
+<h5 id="首先要引入需要的几个插件"><a href="#首先要引入需要的几个插件" class="headerlink" title="首先要引入需要的几个插件"></a>首先要引入需要的几个插件</h5><p><img src="/img/pic01.png" alt=""></p>
+<p>对html进行压缩操作<br><img src="/img/htmlys.png" alt="htmlys"><br>完成后可以命令行输入 <code>gulp-htmlmin</code><br>此时可以看html文件已经压缩</p>
+<p><img src="/img/html01.png" alt=""></p>
+<p>对less文件进行编译<br><img src="/img/less.png" alt="less"><br>命令窗口输入 <code>gulp less</code><br><img src="/img/css.png" alt="css"></p>
+<p>对js进行压缩<br><img src="/img/js.png" alt=""><br>命令窗口输入 <code>gulp js</code> </p>
+<p>分别开启监听和服务 (命令窗口输入hexo watch )(hexo s)<br><img src="/img/watch.png" alt="watch"></p>
+<p><img src="/img/server.png" alt="serve"></p>
+<p>或者直接定义一个默认任务,调用watch和serve,监听所有的文件<br><img src="/img/default.png" alt=""><br>命令行只输入gulp   //会执行所有任务</p>
+<p>最后一步,打开页面同时在编辑器里修改代码页面会同时改变,证明已经成功了!<br><!-- <table><tr><td  bgcolor=#ccc``>shfsafb</td></tr></table> --></p>
+
 
                 
             </div>
