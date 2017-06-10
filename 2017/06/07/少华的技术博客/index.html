@@ -210,15 +210,46 @@
 </ul>
 <hr>
 <h4 id="2-进行本地安装gulp-命令行行输入"><a href="#2-进行本地安装gulp-命令行行输入" class="headerlink" title="2.进行本地安装gulp 命令行行输入"></a>2.进行本地安装gulp 命令行行输入</h4><pre><code>npm install gulp --save-dev
-</code></pre><p>然后可以进行安装gulp插件</p>
-<h4 id="gulp常用组件"><a href="#gulp常用组件" class="headerlink" title="gulp常用组件"></a>gulp常用组件</h4><pre><code>npm install gulp-htmlmin --save     //gulp-htmlmin插件对html文件进行压缩
+</code></pre><hr>
+<blockquote>
+<p>gulp常用组件</p>
+</blockquote>
+<pre><code>gulp-htmlmin --save
+
+gulp-less --save   
+
+gulp-cssnano       
+
+gulp-uglify   
+</code></pre><blockquote>
+<p>gulp常用API</p>
+</blockquote>
+<pre><code>gulp.task(&apos;任务名称&apos;,[&apos;其他任务&apos;],回掉函数)
+
+gulp.src(&apos;文件路径&apos;)
+
+gulp.dest(&apos;目标路径&apos;)   
+
+gul.watch   //监听   
+
+.pipe   //起到一个管道作用
+</code></pre><hr>
+<h4 id="3-然后可以进行安装gulp插件"><a href="#3-然后可以进行安装gulp插件" class="headerlink" title="3.然后可以进行安装gulp插件"></a>3.然后可以进行安装gulp插件</h4><pre><code>npm install gulp-htmlmin --save     //gulp-htmlmin插件对html文件进行压缩
 
 npm install gulp-less --save    //对less文件的编译成为css文件
 
 npm install gulp-cssnano        //压缩css文件
 
 npm install gulp-uglify         //对js文件压缩
-</code></pre><p><img src="/img/pic.jpg" alt=""></p>
+
+npm install browser-sync           //让浏览器实时、快速相应文件的更改，并自动刷新页面
+</code></pre><hr>
+<p>接下来可以在gulpgile.js文件里进行编写</p>
+<h5 id="首先要引入需要的几个插件"><a href="#首先要引入需要的几个插件" class="headerlink" title="首先要引入需要的几个插件"></a>首先要引入需要的几个插件</h5><p><img src="/img/pic01.png" alt=""></p>
+<p>对html进行压缩操作<br><img src="/img/htmlys.png" alt="htmlys"><br>完成后可以命令行输入gulp-htmlmin<br>此时可以看html文件已经压缩</p>
+<p><img src="/img/html01.png" alt=""></p>
+<p>对less文件进行编译<br><img src="/img/less.png" alt="less"><br>命令窗口输入gulp less</p>
+<p>对js进行压缩<br><img src="/img/js.png" alt=""></p>
 
 
                 
