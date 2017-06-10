@@ -11,8 +11,8 @@
     <!--Description-->
     
         <meta name="description" content="date: 2017-06-07 10:33:21
-tags:##使用gulp创建前端自动化工作流环境
-分类:*插件&amp;amp;工具 node.js 学习笔记">
+
+使用gulp创建前端自动化工作流环境分类:  插件&amp;amp;工具 node.js 学习笔记 什么是gulp ?&amp;emsp;&amp;emsp;gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程">
     
 
     <!--Author-->
@@ -183,8 +183,43 @@ tags:##使用gulp创建前端自动化工作流环境
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>date: 2017-06-07 10:33:21</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>##使用gulp创建前端自动化工作流环境</p>
-<h3 id="分类-插件-amp-工具-node-js-学习笔记"><a href="#分类-插件-amp-工具-node-js-学习笔记" class="headerlink" title="分类:*插件&amp;工具 node.js 学习笔记"></a>分类:*插件&amp;工具 node.js 学习笔记</h3>
+<hr>
+<h2 id="使用gulp创建前端自动化工作流环境"><a href="#使用gulp创建前端自动化工作流环境" class="headerlink" title="使用gulp创建前端自动化工作流环境"></a>使用gulp创建前端自动化工作流环境</h2><h5 id="分类-插件-amp-工具-node-js-学习笔记"><a href="#分类-插件-amp-工具-node-js-学习笔记" class="headerlink" title="分类:  插件&amp;工具 node.js 学习笔记 "></a>分类: <em> 插件&amp;工具 node.js 学习笔记 </em></h5><h3 id="什么是gulp"><a href="#什么是gulp" class="headerlink" title="什么是gulp ?"></a>什么是gulp ?</h3><p>&emsp;&emsp;gulp是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成；使用她，我们不仅可以很愉快的编写代码，而且大大提高我们的工作效率。<br>&emsp;&emsp;gulp是基于Nodejs的自动任务运行器， 她能自动化地完成 javascript/coffee/sass/less/html/image/css 等文件的的测试、检查、合并、压缩、格式化、浏览器自动刷新、部署文件生成，并监听文件在改动后重复指定的这些步骤。在实现上，她借鉴了Unix操作系统的管道（pipe）思想，前一级的输出，直接变成后一级的输入，使得在操作上非常简单。</p>
+<p>&emsp;&emsp;在学习前，先谈谈大致使用gulp的步骤，给读者以初步的认识。首先当然是安装nodejs，通过nodejs的npm全局安装和项目安装gulp，其次在项目里安装所需要的gulp插件，然后新建gulp的配置文件gulpfile.js并写好配置信息（定义gulp任务），最后通过命令提示符运行gulp任务即可。</p>
+<h4 id="安装nodejs-gt-全局安装gulp-gt-项目安装gulp以及gulp插件-gt-配置gulpfile-js-gt-运行任务"><a href="#安装nodejs-gt-全局安装gulp-gt-项目安装gulp以及gulp插件-gt-配置gulpfile-js-gt-运行任务" class="headerlink" title="安装nodejs -&gt; 全局安装gulp -&gt; 项目安装gulp以及gulp插件 -&gt; 配置gulpfile.js -&gt; 运行任务"></a>安装nodejs -&gt; 全局安装gulp -&gt; 项目安装gulp以及gulp插件 -&gt; 配置gulpfile.js -&gt; 运行任务</h4><p>安装node可以去<a href="https://github.com/" target="_blank" rel="external">github</a>官网下载然后直接安装就可以,打开命令行输入node -v 检查是否安装成功。因为新版的nodejs内置有npm所以不需要再安装npm.npm 是nodejs 的包管理工具,通过它可以下载安装nodejs的模块包。完成之后我们可以来下载gulp工具了。</p>
+<h4 id="首先我们来搭建gulp工程"><a href="#首先我们来搭建gulp工程" class="headerlink" title="首先我们来搭建gulp工程:"></a>首先我们来搭建gulp工程:</h4><hr>
+<pre><code>gulp/
+  ├── src/
+  │   ├── less/
+  │   │   └─ main.scss
+  │   ├── scripts/
+  │   │   └─ javascript.js
+  │   └── index.html
+  ├── dist/
+  └── gulpfile.js /
+</code></pre><h4 id="1-先全局安装gulp"><a href="#1-先全局安装gulp" class="headerlink" title="1.先全局安装gulp"></a>1.先全局安装gulp</h4><ul>
+<li><p>说明：全局安装gulp目的是为了通过她执行gulp任务；</p>
+<pre><code>npm install gulp -g
+</code></pre></li>
+<li><p>查看是否正确安装：命令提示符执行gulp -v，出现版本号即为正确安装。</p>
+<pre><code>gulp -v
+</code></pre></li>
+<li><p>然后回到文件根目录(gulp)命令行输入</p>
+<pre><code>npm init        //创建一个package.json文件
+</code></pre></li>
+</ul>
+<hr>
+<h4 id="2-进行本地安装gulp-命令行行输入"><a href="#2-进行本地安装gulp-命令行行输入" class="headerlink" title="2.进行本地安装gulp 命令行行输入"></a>2.进行本地安装gulp 命令行行输入</h4><pre><code>npm install gulp --save-dev
+</code></pre><p>然后可以进行安装gulp插件</p>
+<h4 id="gulp常用组件"><a href="#gulp常用组件" class="headerlink" title="gulp常用组件"></a>gulp常用组件</h4><pre><code>npm install gulp-htmlmin --save     //gulp-htmlmin插件对html文件进行压缩
+
+npm install gulp-less --save    //对less文件的编译成为css文件
+
+npm install gulp-cssnano        //压缩css文件
+
+npm install gulp-uglify         //对js文件压缩
+</code></pre><p><img src="/img/pic.jpg" alt=""></p>
+
 
                 
             </div>
