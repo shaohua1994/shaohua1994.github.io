@@ -198,6 +198,7 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
+    width: 800px;
     font-size: 80px;
   }
 }
