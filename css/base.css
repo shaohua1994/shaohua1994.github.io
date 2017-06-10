@@ -16,7 +16,7 @@ body,
   font-family: 'Lora', 'Times New Roman', serif;
 }
 .sans-serif,
-h2,
+h1,
 h2,
 h3,
 h4,
@@ -49,6 +49,7 @@ h3,
 h4,
 h5,
 h6 {
+  width: 800px;
   font-weight: 800;
 }
 a {
