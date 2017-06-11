@@ -11,7 +11,14 @@
     <!--Description-->
     
         <meta name="description" content="date: 2017-06-11 13:07:13
-tags: 暗示法三">
+如何使用hexo在github上搭建自己的博客系统呢?大概可以分为以下几个步骤
+
+搭建环境准备（包括node.js和git环境，gitHub账户的配置）
+安装Hexo
+配置Hexo
+怎样将Hexo与github page 联系起来
+怎样发布文章
+主">
     
 
     <!--Author-->
@@ -182,7 +189,95 @@ tags: 暗示法三">
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>date: 2017-06-11 13:07:13</p>
-<h2 id="tags-暗示法三"><a href="#tags-暗示法三" class="headerlink" title="tags: 暗示法三"></a>tags: 暗示法三</h2>
+<h2 id="如何使用hexo在github上搭建自己的博客系统呢"><a href="#如何使用hexo在github上搭建自己的博客系统呢" class="headerlink" title="如何使用hexo在github上搭建自己的博客系统呢?"></a>如何使用hexo在github上搭建自己的博客系统呢?</h2><p>大概可以分为以下几个步骤</p>
+<ol>
+<li>搭建环境准备（包括node.js和git环境，gitHub账户的配置）</li>
+<li>安装Hexo</li>
+<li>配置Hexo</li>
+<li>怎样将Hexo与github page 联系起来</li>
+<li>怎样发布文章</li>
+<li>主题 推荐</li>
+</ol>
+<p>1) 搭建环境准备</p>
+<p>大概可以分为以下三步 </p>
+<ul>
+<li>Node.js 的安装和准备 </li>
+<li>Git的安装和准备 </li>
+<li>gitHub账户的配置</li>
+</ul>
+<p>配置Node.js环境</p>
+<p>下载node.js安装文件：</p>
+<p> <code>Windows Installer 32-bit</code><br> <code>Windows Installer 64-bit</code></p>
+<p> <img src="http://ww3.sinaimg.cn/large/9fe4afa0gw1faljhotcr1j20dv0atq4u.jpg" alt=""></p>
+<p> 一路next,然后window R 打开cmd命令窗口输入node -v 检查是否安装好了</p>
+<p> <img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1faljiuibwdj20it0cb3zd.jpg" alt=""></p>
+<p> 配置Git环境</p>
+<p>下载git安装文件：</p>
+<p>GIt官网下载地址：</p>
+<p><a href="Git-2.6.3-64-bit.exe">Git-2.6.3-64-bit.exe</a></p>
+<p>和Node.js一样，大部分设置都只需要保持默认,为了方便在我的电脑环境变量中配置git Path路径,<br>然后打开命令行输入<code>git -v</code>,如果如下图所示则表示成功</p>
+<p><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1faljp87tpkj20it0cbdgo.jpg" alt=""></p>
+<p>接下来是github账户的注册</p>
+<p>打开<a href="https://github.com/" target="_blank" rel="external">github</a>，在下图的框中，分别输入自己的用户名，邮箱，密码。</p>
+<p><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1faljxemku5j20bo0as0tv.jpg" alt=""></p>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>在自己认为合适的地方创建一个文件夹，这里我以E：/hexo 为例子讲解，首先在E盘目录下创建Hexo文件夹，并在命令行的窗口进入到该目录</p>
+<p>在命令行中输入：</p>
+<pre><code>npm install hexo-cli -g
+</code></pre><h4 id="然后输入"><a href="#然后输入" class="headerlink" title="然后输入"></a>然后输入</h4><pre><code>npm install hexo --save
+</code></pre><p> 然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。  在命令行中输入：</p>
+<pre><code>hexo -v
+</code></pre><p>看到这个说明已经安装好了</p>
+<p><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1falkf052h7j205r06f0su.jpg" alt=""></p>
+<h4 id="hexo的相关配置"><a href="#hexo的相关配置" class="headerlink" title="hexo的相关配置"></a>hexo的相关配置</h4><p>初始化Hexo<br>接着上面的操作，输入：</p>
+<pre><code>hexo init
+</code></pre><p>然后输入：</p>
+<pre><code>npm install
+</code></pre><p>之后npm将会自动安装你需要的组件</p>
+<p>同样是在命令行中，输入：</p>
+<pre><code>hexo g
+</code></pre><p>然后输入：</p>
+<pre><code>hexo s
+</code></pre><p>然后会提示：</p>
+<pre><code>INFO Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.
+</code></pre><p>在浏览器中打开<a href="http://localhost:4000/你将会看到：" target="_blank" rel="external">http://localhost:4000/你将会看到：</a></p>
+<p><img src="http://ww4.sinaimg.cn/large/9fe4afa0gw1falkk5mnsvj211y0lcten.jpg" alt=""></p>
+<p>Hexo在本地的配置已经全都结束了。</p>
+<h3 id="hexo如何与github链接"><a href="#hexo如何与github链接" class="headerlink" title="hexo如何与github链接"></a>hexo如何与github链接</h3><p>大概分为以下几步 </p>
+<ul>
+<li>配置git个人信息 </li>
+<li>配置Deployment</li>
+</ul>
+<p>1、设置Git的user name和email：(如果是第一次的话)</p>
+<pre><code>git config --global user.name &quot;user name&quot;
+git config --global user.email &quot;your email&quot;
+</code></pre><p>2、生成密钥</p>
+<pre><code>ssh-keygen -t rsa -C &quot;your email&quot;
+</code></pre><p>配置Deployment</p>
+<p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：</p>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com:yourname/yourname.github.io.git
+  branch: master
+</code></pre><p>比如我的仓库的地址是git@github.com:gdutxiaoxu/gdutxiaoxu.github.io.git，所以配置如下</p>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com:gdutxiaoxu/gdutxiaoxu.github.io.git
+  branch: master
+</code></pre><p>写博客、发布文章</p>
+<p>新建一篇博客，执行下面的命令：</p>
+<pre><code>hexo new post &quot;article title&quot;
+</code></pre><p><img src="http://ww2.sinaimg.cn/large/9fe4afa0gw1fan5dd0480j20cb04ndg2.jpg" alt=""></p>
+<p>这时候在我的 电脑的目录下 F:\hexo\source\ _posts 将会看到 article title.md 文件</p>
+<p>用MarDown编辑器打开就可以编辑文章了。文章编辑好之后，运行生成、部署命令：</p>
+<pre><code>hexo g   // 生成
+hexo d   // 部署
+</code></pre><p>当然你也可以执行下面的命令，相当于上面两条命令的效果</p>
+<pre><code>hexo d -g #在部署前先生成
+</code></pre><p>1）注意需要提前安装一个扩展：<br>npm install hexo-deployer-git –save</p>
+<p>如果没有执行者行命令，将会提醒</p>
+<p>deloyer not found:git</p>
+<p>部署成功后访问 你的地址，<a href="https://yourName.github.io（这里输入你的地址：" target="_blank" rel="external">https://yourName.github.io（这里输入你的地址：</a> <a href="https://user" target="_blank" rel="external">https://user</a> name.github.io ),将可以看到生成的文章。</p>
+
 
                 
             </div>
